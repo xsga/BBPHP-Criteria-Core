@@ -1,7 +1,7 @@
 {
   "name": "xsga/bbphp-criteria-core",
   "description": "A PHP criteria core library",
-  "type": "project",
+  "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/xsga/BBPHP-Criteria-Core",
   "keywords": [
