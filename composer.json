@@ -16,7 +16,8 @@
     }
   ],
   "require": {
-    "php": "^8.4"
+    "php": "^8.4",
+    "xsga/bbphp-exception": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^4.0",
