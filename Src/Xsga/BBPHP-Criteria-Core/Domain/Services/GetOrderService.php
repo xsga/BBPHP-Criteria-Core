@@ -10,7 +10,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\Model\Order;
 
 final class GetOrderService
 {
-    // TODO: Delete this code?.
     private const int ERROR_ORDER_FIELD_NOT_VALID = 1043;
 
     public function __construct(private readonly LoggerInterface $logger)
@@ -59,9 +58,7 @@ final class GetOrderService
                 'order_field' => $sortField
             ]);
 
-            // TODO: Extract GenericException to a external library and use it here to pass the parameters to the exception.
-            //throw new OrderByNotValidException($errorMsg, self::ERROR_ORDER_FIELD_NOT_VALID, null, [1 => $sortField]);
-            throw new OrderByNotValidException($errorMsg, self::ERROR_ORDER_FIELD_NOT_VALID);
+            throw new OrderByNotValidException($errorMsg, self::ERROR_ORDER_FIELD_NOT_VALID, [1 => $sortField]);
         }
     }
 }

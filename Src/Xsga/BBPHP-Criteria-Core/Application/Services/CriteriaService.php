@@ -27,7 +27,7 @@ final class CriteriaService
         $order      = $this->getOrderService->get($requestData);
         $pagination = $this->getPaginationService->get($requestData, $this->maxResults);
 
-        $criteria = new Criteria($filters, $order, $pagination);
+        $criteria = new Criteria(filters: $filters, orders: $order, pagination: $pagination);
 
         return $criteria;
     }

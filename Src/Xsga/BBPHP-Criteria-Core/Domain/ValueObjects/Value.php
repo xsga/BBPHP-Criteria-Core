@@ -8,7 +8,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\Exceptions\ValueNotValidException;
 
 final class Value
 {
-    // TODO: Delete this code?.
     private const int ERROR_CRITERIA_VALUE_NOT_VALID = 1049;
 
     private readonly string $value;

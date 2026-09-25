@@ -11,7 +11,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\ValuesType;
 
 final class GetFiltersService
 {
-    // TODO: Delete this code?.
     private const int ERROR_FILTER_NOT_VALID = 1045;
 
     public function __construct(private readonly LoggerInterface $logger)
@@ -65,8 +64,7 @@ final class GetFiltersService
                 'filter' => $filter
             ]);
 
-            //throw new FilterNotValidException($errorMsg, self::ERROR_FILTER_NOT_VALID, null, [1 => $filter]);
-            throw new FilterNotValidException($errorMsg, self::ERROR_FILTER_NOT_VALID);
+            throw new FilterNotValidException($errorMsg, self::ERROR_FILTER_NOT_VALID, [1 => $filter]);
         }
     }
 }

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Xsga\BBPHP\Criteria\Core\Domain\Exceptions;
 
-use Exception;
+use Xsga\BBPHP\Exception\GenericException;
 
-final class ValueTypeNotValidException extends Exception
+final class ValueTypeNotValidException extends GenericException
 {
 }

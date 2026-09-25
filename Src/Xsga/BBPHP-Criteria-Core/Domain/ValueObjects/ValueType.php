@@ -9,7 +9,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\ValuesType;
 
 final class ValueType
 {
-    // TODO: Delete this code?.
     private const int ERROR_CRITERIA_VALUE_TYPE_NOT_VALID = 1057;
 
     private readonly string $value;

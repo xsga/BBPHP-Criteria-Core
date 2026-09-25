@@ -9,7 +9,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\Operators;
 
 final class Operator
 {
-    // TODO: Delete this code?.
     private const int ERROR_CRITERIA_OPERATOR_NOT_VALID = 1046;
 
     private readonly string $operator;
@@ -39,17 +38,10 @@ final class Operator
         };
 
         if ($validOperator === null) {
-            /*
             throw new FilterOperatorNotValidException(
                 "Error, operator '$operator' not valid. Valid operators: eq, ne, lk, gt, lt, ge, le, in",
                 self::ERROR_CRITERIA_OPERATOR_NOT_VALID,
-                null,
                 [1 => $operator]
-            );
-            */
-            throw new FilterOperatorNotValidException(
-                "Error, operator '$operator' not valid. Valid operators: eq, ne, lk, gt, lt, ge, le, in",
-                self::ERROR_CRITERIA_OPERATOR_NOT_VALID
             );
         }
 

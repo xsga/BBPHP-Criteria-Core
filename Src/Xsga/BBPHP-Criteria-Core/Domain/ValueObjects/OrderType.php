@@ -9,7 +9,6 @@ use Xsga\BBPHP\Criteria\Core\Domain\OrdersType;
 
 final class OrderType
 {
-    // TODO: Delete this code?.
     private const int ERROR_ORDER_TYPE_NOT_VALID = 1044;
 
     private readonly string $type;
@@ -34,8 +33,7 @@ final class OrderType
 
         if ($validType === null) {
             $errorMsg = "Error, order type '$type' not valid. Valid types: ASC, DESC";
-            //throw new OrderTypeNotValidException($errorMsg, self::ERROR_ORDER_TYPE_NOT_VALID, null, [1 => $type]);
-            throw new OrderTypeNotValidException($errorMsg, self::ERROR_ORDER_TYPE_NOT_VALID);
+            throw new OrderTypeNotValidException($errorMsg, self::ERROR_ORDER_TYPE_NOT_VALID, [1 => $type]);
         }
 
         return $validType;

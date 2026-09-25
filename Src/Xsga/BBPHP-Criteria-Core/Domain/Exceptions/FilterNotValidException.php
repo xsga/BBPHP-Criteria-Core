@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Xsga\BBPHP\Criteria\Core\Domain\Exceptions;
 
-use Exception;
+use Xsga\BBPHP\Exception\GenericException;
 
-final class FilterNotValidException extends Exception
+final class FilterNotValidException extends GenericException
 {
 }
